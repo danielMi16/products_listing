@@ -16,4 +16,5 @@ As Hashtables are normally applied for exact matches and not similar ones, the m
 ##Assumptions
 
 >  Products like DSC-W310S and DSC-W310 are considered different products
+
 >  Listing items may be written in English, French or German
