@@ -1,0 +1,19 @@
+
+{"title":"Canon PowerShot ELPH 100 HS (Grey)","manufacturer":"Canon Canada","currency":"CAD","price":"314.78"}
+{"title":"Kodak EasyShare M550 12 MP Digital Camera with 5x Wide Angle Optical Zoom and 2.7 Inch LCD (Purple)","manufacturer":"Kodak","currency":"CAD","price":"161.56"}
+{"title":"Canon EOS Rebel XS 10.1MP Digital SLR Camera with EF-S 18-55mm f/3.5-5.6 IS Lens (Black)","manufacturer":"Canon Canada","currency":"CAD","price":"774.71"}
+{"title":"Canon PowerShot A800 (Silver)","manufacturer":"Canon Canada","currency":"CAD","price":"99.99"}
+{"title":"Canon PowerShot A800 (Silver)","manufacturer":"Canon Canada","currency":"CAD","price":"152.43"}
+{"title":"Canon PowerShot SD1300IS 12 MP Digital Camera with 4x Wide Angle Optical Image Stabilized Zoom and 2.7-Inch LCD (Green)","manufacturer":"Canon Canada","currency":"CAD","price":"242.40"}
+{"title":"GoPro HD Surf HERO Camera","manufacturer":"GoPro","currency":"CAD","price":"289.99"}
+{"title":"Canon EOS Rebel XS 10.1 MP Digital SLR Camera with 3X Optical zoom and 2.5-Inch TFT LCD (Black)","manufacturer":"Canon Canada","currency":"CAD","price":"448.00"}
+{"title":"NEW WP5300 Blue Waterproof 12MP Digital Video Recorder /Camera","manufacturer":"SVP","currency":"CAD","price":"59.84"}
+{"title":"Sony DSC-W310 12.1MP Digital Camera with 4x Wide Angle Zoom with Digital Steady Shot Image Stabilization and 2.7 inch LCD (Silver)","manufacturer":"Sony","currency":"CAD","price":"139.99"}
+{"title":"Olympus UZ Series 14 MP 30 X","manufacturer":"Olympus","currency":"CAD","price":"257.87"}
+{"title":"Olympus UZ Series 14 MP 30 X","manufacturer":"Olympus","currency":"CAD","price":"534.93"}
+{"title":"Samsung EC-ES27 Purple Digital Camera","manufacturer":"Samsung","currency":"CAD","price":"69.99"}
+{"title":"NEW 9.0 MP High Resolution Full-Motion Digital Black Video Camcorder / STILL CAMERA","manufacturer":"SVP","currency":"CAD","price":"48.87"}
+{"title":"Canon SX30IS 14.1MP Digital Camera with 35x Wide Angle Optical Image Stabilized Zoom and 2.7 Inch Wide LCD","manufacturer":"Canon Canada","currency":"CAD","price":"459.99"}
+{"title":"Canon SX30IS 14.1MP Digital Camera with 35x Wide Angle Optical Image Stabilized Zoom and 2.7 Inch Wide LCD","manufacturer":"Canon Canada","currency":"CAD","price":"479.96"}
+{"title":"Sony Cyber-shot DSC-H55 14.1MP Digital Camera with 10x Wide Angle Optical Zoom with SteadyShot Image Stabilization and 3.0 inch LCD (Black)","manufacturer":"Sony","currency":"CAD","price":"216.87"}
+{"title":"Kodak EasyShare M530 12 MP Digital Camera with 3x Wide Angle Optical Zoom and 2.7 Inch LCD (Red)","manufacturer":"Kodak","currency":"CAD","price":"122.03"}
