@@ -59,7 +59,7 @@ public class ProductHelperHashImpl extends ProductHelper {
 		
 		Product result = null;
 		while(!concatenatedWords.isEmpty()){
-			if(modelsFromManufacturer.get(concatenatedWords.peek()) != null){
+			if(modelsFromManufacturer.get(cleanModel(concatenatedWords.peek())) != null){
 				result = modelsFromManufacturer.get(cleanModel(concatenatedWords.poll()));
 				
 			}
