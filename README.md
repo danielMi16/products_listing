@@ -4,6 +4,9 @@ Application to solve the Sortable challenge http://sortable.com/challenge/
 
 ##Running
 
+###Pre-requisites
+ - Maven Installed
+
 1. Clone the repository
 2. Execute configure.sh
 3. Execute run.sh **products_file** **listings_file**
