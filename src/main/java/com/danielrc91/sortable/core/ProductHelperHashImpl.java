@@ -42,7 +42,7 @@ public class ProductHelperHashImpl extends ProductHelper {
 	
 	public String manufacturerOnList(String manufacturer){
 		String[] manufacturerArray = manufacturer.toUpperCase().split(" ");
-		Queue<String> concatenated = ProductHelper.concatenateWords(new LinkedList<>(Arrays.asList(manufacturerArray)));
+		Queue<String> concatenated = ProductHelper.concatenateWords(new LinkedList<>(Arrays.asList(manufacturerArray)), new HashSet<String>());
 		while(!concatenated.isEmpty()){
 			if(this.manufacturers.contains(concatenated.peek())) return concatenated.poll();
 			concatenated.poll();
@@ -52,14 +52,14 @@ public class ProductHelperHashImpl extends ProductHelper {
 
 	public Product getProduct(String title, String manufacturer){
 		String[] words = title.toUpperCase().split(" ");
-		if(!validTitle(words)) return null;
+		//if(!validTitle(words)) return null;
 		LinkedList<String> wordsOfInterest = cleanTitle(words);
-		Queue<String> concatenatedWords = concatenateWords(wordsOfInterest);
+		Queue<String> concatenatedWords = concatenateWords(wordsOfInterest, this.manufacturers);
 		Hashtable<String, Product> modelsFromManufacturer = this.models.get(manufacturer);	
 		
 		Product result = null;
 		while(!concatenatedWords.isEmpty()){
-			if(modelsFromManufacturer.get(concatenatedWords.peek()) != null){
+			if(modelsFromManufacturer.get(cleanModel(concatenatedWords.peek())) != null){
 				result = modelsFromManufacturer.get(cleanModel(concatenatedWords.poll()));
 				
 			}

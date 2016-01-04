@@ -9,7 +9,7 @@ import com.danielrc91.sortable.model.Product;
 public abstract class ProductHelper {
 	private static final int MINIMUM_MODEL_LENGTH_ACCEPTED = 2;
 	private static final String IS_A_NUMBER = "-?\\d+(\\.\\d+)?";
-	
+	private static final int INTERESTING_WORDS = 6;
 	private static HashSet<String> INVALID_WORDS;
 
 	
@@ -30,15 +30,23 @@ public abstract class ProductHelper {
 		return true;
 	}
 	
-	protected static Queue<String> concatenateWords(LinkedList<String> words){
+	protected static Queue<String> concatenateWords(LinkedList<String> words, HashSet<String> manufacturers){
 		if(words.isEmpty()) return words;
 		Queue<String> result = new LinkedList<>(words);
-		StringBuilder last=new StringBuilder(words.poll());
+                if(manufacturers.contains(words.peek())) words.poll();
+                int i =0;
+		while(i < INTERESTING_WORDS && i < words.size()){
+                    
+                    StringBuilder concat = new StringBuilder(words.get(i));
 
-		while(!words.isEmpty()){
-			last.append(" ");
-			last.append(words.poll());
-			result.offer(last.toString());
+                    for(int j = i+1; j< INTERESTING_WORDS && j < words.size(); j++){
+                        
+                            concat.append(" ");
+                            concat.append(words.get(j));
+                            result.offer(concat.toString());   
+                        
+                    }
+                    i++;
 		}
 		return result;
 		
@@ -52,7 +60,14 @@ public abstract class ProductHelper {
 		LinkedList<String> s = new LinkedList<>();
 		for(String x : words){ 
 			if(x.length() < MINIMUM_MODEL_LENGTH_ACCEPTED)continue;
-			if(x.matches(IS_A_NUMBER)) continue;
+//			if(x.matches(IS_A_NUMBER)) continue;
+                        if(x.contains("-")){
+                            String[] wordExploted = x.split("-");
+                            for(String t: wordExploted){
+                                if(x.length() < MINIMUM_MODEL_LENGTH_ACCEPTED)continue;
+                                s.offer(t);
+                            }
+                        }
 			s.offer(x);
 			
 		}

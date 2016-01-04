@@ -16,11 +16,11 @@ import com.danielrc91.sortable.model.Listing;
 import com.danielrc91.sortable.model.Product;
 import com.danielrc91.sortable.parser.ListingParser;
 import com.danielrc91.sortable.parser.ProductParser;
+import org.junit.Ignore;
 
 public class IntegrationTest {
 
 	private static final String PATH_TO_TEST_FILES = ClassLoader.getSystemResource("").getPath();
-
 	@Test
 	public void smallTest() throws IOException{
 		

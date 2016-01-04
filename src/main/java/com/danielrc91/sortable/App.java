@@ -76,8 +76,6 @@ public class App
 		listingReader.close();
 		productReader.close();
 		
-		System.out.println("Tries: "+productMatcher.getNumberTries());
-		System.out.println("Possitives: "+productMatcher.getPositiveMatches());
 		
 		
 		Enumeration<String> enumKey = results.keys();

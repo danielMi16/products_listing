@@ -1,6 +1,7 @@
 package com.danielrc91.sortable.core;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -30,12 +31,13 @@ public class ProductHelperTest {
 	public void cleanTitleTest(){
 		String[] title = {"1", "2", "3", "4", "5", "6", "700", "8000", "9000", "1000"};
 		Queue<String> result =ProductHelper.cleanTitle(title);
-		Assert.assertTrue(result.isEmpty());
+		Assert.assertTrue(!result.isEmpty());
 		
 		String[] title2 = {"one","X" ,"two", "333", "four"};
 		result = ProductHelper.cleanTitle(title2);
 		Assert.assertEquals("one", result.poll());
 		Assert.assertEquals("two", result.poll());
+                Assert.assertEquals("333", result.poll());
 		Assert.assertEquals("four", result.poll());
 		
 	}
@@ -44,7 +46,7 @@ public class ProductHelperTest {
 		String[] title2 = {"one","two","three"};
 		LinkedList<String> list = new LinkedList<>(Arrays.asList(title2));
 		
-		Queue<String> result = ProductHelper.concatenateWords(list);
+		Queue<String> result = ProductHelper.concatenateWords(list, new HashSet<String>());
 		Assert.assertEquals("one", result.poll());
 		Assert.assertEquals("two", result.poll());
 		Assert.assertEquals("three", result.poll());
